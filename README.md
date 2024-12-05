@@ -1,2 +1,4 @@
-# ZoopInstrumentarium
-Zoöp Instrumentarium
+# Zoöp Instrumentarium
+
+*   BirdNet-PI
+*   Enviro+ Board
