@@ -1,0 +1,13 @@
+[Unit]
+Description=Enviroplus Export
+After=network.target
+
+[Service]
+User=ccu
+Group=ccu
+WorkingDirectory=/home/ccu/enviroplus
+ExecStart=/home/ccu/enviroplus/start.sh
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
