@@ -8,6 +8,8 @@ Group=ccu
 WorkingDirectory=/home/ccu/enviroplus
 ExecStart=/home/ccu/enviroplus/start.sh
 ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
