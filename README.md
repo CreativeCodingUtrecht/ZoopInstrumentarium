@@ -84,6 +84,13 @@ The data can be visualized using [this sketch](https://rein.computer/sketches/cc
 ## Data platform ideas
 
 ### Current implementation
+
+#### BirdNET-Pi
+The current version of the BirdNET-Pi at CCU is connected to the [BirdWeather's Live Map](https://app.birdweather.com). All data recorded in this service is available though the [BirdWeather Data Explorer](https://app.birdweather.com/data/aj2YdMtuzSF7vTDfYDtXkjCP). 
+
+To access this data with software, we can use the public [BirdWeather GraphQL API](https://app.birdweather.com/api/index.html).
+
+#### Enviro+
 The current version of the CCU Enviro+ Export Service is a simple mechanism to collect Enviro+ metrics from the sensors connected to the Raspberry Pi. The data is uploaded to a service hosted on the internet. This data can then be visualised.
 
 ### Internet of Things (IoT) monitoring /w Prometheus and Grafana
