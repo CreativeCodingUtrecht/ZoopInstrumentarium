@@ -21,6 +21,11 @@ Once that’s done - you can [create and manage your station](https://app.birdwe
 To connect BirdNET-PI with BirdWeather, configure your BirdWeather ID under "Basic Settings" of your BirdNET-PI. 
 Also make sure that the Latitude and Longitude match what is in your BirdNET-Pi configuration.
 
+### Connect BirdNET-PI with Telegram 
+The BirdNET-PI uses Apprise to send notifications. You can send these notifications to multiple destinations, including Telegram. For more detailed instructions, see [Apprise documentation for using Telegram](https://github.com/caronc/apprise/wiki/Notify_telegram).
+
+Do you want to follow detections with multiple people? Our suggestion is to create a public Telegram Group to collect BirdNET-Pi notifications. To achieve this, add your Telegram Bot to this group and use the `chatid` of the group when configuring the Apprise notification via Telegram on your BirdNET-Pi.
+
 ## Enviro+ for Raspberry Pi 
 Designed for environmental monitoring, [Enviro+ for Raspberry Pi](https://shop.pimoroni.com/products/enviro) lets you measure air quality (pollutant gases and particulates), temperature, pressure, humidity, light, and noise level. When combined with a particulate matter sensor, it's great for monitoring air quality just outside your house (more information below), or without the particulate sensor you can use it to monitor indoor conditions.
 
