@@ -1,15 +1,23 @@
 # Zoöp Instrumentarium
 
 ## BirdNET-PI
-The BirdNET-PI is a realtime acoustic bird classification system for the Raspberry Pi 4B, 400, 3B+, and 0W2.
+The [BirdNET-PI](https://github.com/Nachtzuster/BirdNET-Pi) is a realtime acoustic bird classification system for the Raspberry Pi 5, 4B, 400, 3B+, and 0W2. 
 
-BirdNET-Pi is built on the [BirdNET framework](https://github.com/kahst/BirdNET-Analyzer) by [@kahst](https://github.com/kahst) using [pre-built TensorFlow Lite binaries](https://github.com/PINTO0309/TensorflowLite-bin) by [@PINTO0309](https://github.com/PINTO0309). It is able to recognize bird sounds from a USB microphone or sound card in realtime and share its data with the rest of the world.
+BirdNET-Pi is built on the [BirdNET framework](https://github.com/kahst/BirdNET-Analyzer) by [@kahst](https://github.com/kahst) using [pre-built TensorFlow Lite binaries](https://github.com/PINTO0309/TensorflowLite-bin) by [@PINTO0309](https://github.com/PINTO0309). It is able to recognize bird sounds from a USB microphone or sound card in near realtime and share its data with the rest of the world.
+
+In 2024, [@Nachtzuster](https://github.com/Nachtzuster/BirdNET-Pi) forked and began building on [@mcguirepr89's original implementation](https://github.com/mcguirepr89/BirdNET-Pi) to further update and improve BirdNET-Pi. 
 
 ### Installation
+To install BirdNET-Pi and start identifying birds and sharing the results with the world (i.e. Bird Weather), follow these [slightly outdated installation instructions](https://github.com/mcguirepr89/BirdNET-Pi/wiki/Installation-Guide) on the [BirdNET-PI website](https://www.birdweather.com/birdnetpi). 
 
-Follow the [installation instructions](https://github.com/mcguirepr89/BirdNET-Pi/wiki/Installation-Guide) on the [BirdNET-PI website](https://www.birdweather.com/birdnetpi) to start identifying birds and sharing the results with the world (i.e. Bird Weather).
+Make sure to:
 
-NB: THe latest version of Raspberry Pi OS (Debian Bookworm) has issues during installation (see this [GitHub issue](https://github.com/mcguirepr89/BirdNET-Pi/issues/1049)). Easiest solution is to select `Raspberry Pi OS (Legacy, 64-bit) Lite` (Debian Bullseye). The installation (and BirdNET-Pi itself) runs without issues on this version of the OS.
+*  flash your SD Card with the latest Raspberry Pi OS (Bookworm), and then
+*  install the software on your Raspberry Pi using the following command that uses the [@Nachtzuster](https://github.com/Nachtzuster/BirdNET-Pi) fork of BirdNET-Pi:
+
+```
+curl -s https://raw.githubusercontent.com/Nachtzuster/BirdNET-Pi/main/newinstaller.sh | bash
+```
 
 ## BirdWeather
 [BirdWeather](https://www.birdweather.com/) is a pioneering visualization platform that harnesses the [BirdNET](https://birdnet.cornell.edu/) artificial neural network to monitor bird vocalizations globally through 2000 active audio stations (and growing). 
